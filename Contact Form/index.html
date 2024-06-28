@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale 1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Survey Form</title>
+<link rel="stylesheet" a href="styles.css">
+
+</head>
+
+<body>
+<div class="wrapper">
+<h1 id="title">Contact Us</h1>
+<p id="description">Contact Customer Support</p>
+<form id="survey-form">
+<label id="name"><input id="name" name="name" type="text" placeholder="First Name" required></label>
+<label id="last-name"><input id="last-name" name="last-name" type="text" placeholder="Last Name" required></label>
+<label id="email"><input id="email" name="email" type="email" placeholder="E-mail" required></label>
+<label id="number"><input id="number" name="number" type"number" min="0" max="9" placeholder="Age" required></label>
+<br><br>
+
+<label for="dropdown"> 
+<select id="dropdown" name="dropdown" value="dropdown">
+<option value="gender">Select One</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="Other">Other</option><
+</select>
+
+<br><br>
+<legend>Account type *required*</legend>
+<label for="personal"><input id="personal" type="radio" name="account" class="inline" checked> Personal</label>
+<label for="business"><input id="business" type="radio" name="account" class="inline"> Business</label>
+
+<br><br>
+
+<section>
+<legend>How did you hear about us?</legend>
+<label for="Newspaper"><input type="checkbox" id="Newspaper" name="Newspaper">Newspaper</label>
+<label for="Online"><input type="checkbox" id="Online" name="Online" checked>Online</label>
+<label for="Other"><input type="checkbox" id="Other" name="Other">Other
+</label>
+</section>
+
+<br>
+
+<textarea id="textarea"></textarea>
+<br><br>
+<button class="button1">Submit</button>
+</form>
+</div>
+</body>
+</html>
